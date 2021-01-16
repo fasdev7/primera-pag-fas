@@ -1,2 +1,2 @@
-# probamdo
- primera pag web con html, css y js
+# primera
+ primera pag web con html, scss y js
