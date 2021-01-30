@@ -8,7 +8,7 @@
 body{
   margin: 0;
   padding: 0;
-  background: url(/tokyo.42f5706e.jpg) no-repeat;
+  background: url(/images/tokyo.jpg) no-repeat;
   background-size: cover;
 }
 .box{
@@ -27,5 +27,3 @@ body{
   width: 200px;
   height: 200px;
 }
-
-/*# sourceMappingURL=/style.493e6e98.css.map */

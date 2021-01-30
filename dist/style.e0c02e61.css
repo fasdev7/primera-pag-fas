@@ -5,104 +5,11 @@
   /* background: linear-gradient(to right, #FFA8F4, #8ecdff); */
 }
 
-.nav-list li a {
-  text-decoration: none;
-  color: white;
-  padding: 1 rem;
-  display: block;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: white;
-  background-color: #333;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-}
-
-.brand-title {
-  font-size: 1.5rem;
-  margin: 0.5rem;
-}
-
-.navbar-links ul {
+body {
   margin: 0;
   padding: 0;
-  display: flex;
-}
-
-.navbar-links li {
-  list-style: none;
-}
-
-.navbar-links li a {
-  text-decoration: none;
-  color: white;
-  padding: 1rem;
-  display: block;
-}
-
-.navbar-links li:hover {
-  background-color: #555;
-}
-
-.toggle-button {
-  position: absolute;
-  top: 0.75rem;
-  right: 1rem;
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 21px;
-}
-
-.toggle-button .bar {
-  height: 3px;
-  width: 100%;
-  background-color: white;
-  border-radius: 10px;
-}
-
-.home,
-.about {
-  height: 90vh;
-  position: absolute;
-  width: 100%;
-}
-
-.home-content,
-.about-content {
-  height: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.home-content img,
-.about-content img {
-  max-height: 70%;
-  max-width: 50%;
-}
-.home-content h1,
-.about-content h1 {
-  font-size: 50px;
-  margin: 30px 10px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-.home-content p,
-.about-content p {
-  margin: 30px 10px;
-  font-size: 35px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-
-.home {
-  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
-}
-
-.about {
-  background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+  background: url(/tokyo.42f5706e.jpg) no-repeat;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=/style.e0c02e61.css.map */
