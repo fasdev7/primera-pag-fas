@@ -1,14 +1,8 @@
-*{
-  margin : 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  /* background: linear-gradient(to right, #FFA8F4, #8ecdff); */
-}
 
 body{
   margin: 0;
   padding: 0;
-  background: url(/tokyo.42f5706e.jpg) no-repeat;
+  background: url(/nasa.63b9fa3b.jpg) no-repeat;
   background-size: cover;
 }
 .box{
@@ -20,7 +14,7 @@ body{
    margin-top: 5%;
    color: white;
    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   border-radius: 5 px;
+   border-radius: 3%;
 }
 
 .box-img{
@@ -43,6 +37,24 @@ body{
 
 .box p{
   text-align: justify;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+.box li{
+  display: inline-block;
+  margin: 6px;
+  list-style: none;
+}
+
+.box li a{
+
+  color: white;
+  text-decoration: none;
+  font-size: 60px;
 }
 
 /*# sourceMappingURL=/style.493e6e98.css.map */
