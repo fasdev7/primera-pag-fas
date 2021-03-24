@@ -112,10 +112,6 @@ body {
   border-style: solid;
 }
 
-#Sinopsis {
-  text-align: center;
-}
-
 #Necesidades {
   text-align: center;
   display: flex;
@@ -169,17 +165,51 @@ a:active {
 }
 
 @media screen and (max-width: 600px) {
+
+  body{
+    margin: auto;
+    width: 98%;
+  }
+  
   .section .need {
     /* float: left;
 		margin-left: 3%;
 		margin-top: 2%;
-		padding: 10px;
 		width: 95%;
 		background-color: #674679;
 		color: #d6bde2;
 		text-align: justify;
 		border-radius: 10px; */
     flex: 90%;
+    padding: 10px;
+    margin-left: 0%;
+    margin-right: 0%;    
+  }
+  #top {
+    text-align: center;
+    text-transform: uppercase;
+    /* font-size: 25px; */
+    /* font-color:  */
+    color: rgba(255, 255, 255, 0);
+    /* barras invisibles*/
+    /* width: 100%; */
+    margin: auto;
+    top: 0;
+    background-image: linear-gradient(to top, #ce0e81, #1e0c61);
+    border-style: none none none solid;
+    border-width: 5px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 10px;
+  }
+
+  #top a {
+    /* display: inline-block; */
+    padding: 2px;
+    letter-spacing: 1px;
+    font-size: 1em;
   }
 }
 
