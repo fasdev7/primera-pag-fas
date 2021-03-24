@@ -21,7 +21,7 @@ body {
   border-color: #170222;
   margin: 10px auto;
   overflow-y: auto;
-  word-break: break-all;
+  word-break: break-word;
 }
 
 
@@ -69,6 +69,7 @@ body {
 
 .section {
   width: 100%;
+  padding: 25px;
   /* display: inline-block; */
 }
 
