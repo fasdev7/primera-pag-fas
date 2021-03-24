@@ -21,6 +21,7 @@ body {
   border-color: #170222;
   margin: 10px auto;
   overflow-y: auto;
+  word-break: break-all;
 }
 
 
@@ -125,7 +126,7 @@ body {
 
 a {
   color: rgb(182, 224, 236);
-  display: inline-block;
+  /* display: inline-block; */
 }
 
 a:link {
