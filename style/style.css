@@ -1,59 +1,187 @@
+* {
+  -webkit-box-sizing: border-box;
+  /* con estas 3 lineas se tiene en cuenta el ancho total del elemento al definir sus dimensiones, con padding y borde*/
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
-body{
+html {
   margin: 0;
   padding: 0;
-  background: url(/images/nasa.jpg) no-repeat;
-  background-size: cover;
-  
-}
-.box{
-   width: 450px;
-   background: rgba(0, 0, 0, 0.4);
-   padding: 40px;
-   text-align: center;
-   margin: auto;
-   margin-top: 5%;
-   color: white;
-   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   border-radius: 3%;
+  background-color: #220530;
 }
 
-.box-img{
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
+body {
+  font-family: 'Roboto', sans-serif;
+  /* roboto y una fuente por defecto por si no carga bien*/
+  width: 90%;
+  color: #340b3f;
+  background-color: #8c5ea3;
+  border-radius: 5px;
+  border-color: #170222;
+  margin: 10px auto;
+  overflow-y: auto;
 }
 
-.box h1{
-  font-size: 40px;
-  letter-spacing: 4px;
-  font-weight: 100;
+
+#top {
+  text-align: center;
+  text-transform: uppercase;
+  /* font-size: 25px; */
+  /* font-color:  */
+  color: rgba(255, 255, 255, 0);
+  /* barras invisibles*/
+  /* width: 100%; */
+  margin: auto;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  /* background: rgb(0, 90, 10); */
+  /* background-image: linear-gradient(to left, rgba(160, 31, 172, 0.9), rgb(30, 12, 97)); */
+  background-image: linear-gradient(to top, #ce0e81, #1e0c61);
+  border-style: none none none solid;
+  border-width: 5px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 25px;
 }
 
-.box h5{
-  font-size: 25px;
-  letter-spacing: 3px;
-  font-weight: 100;
-}
-
-.box p{
-  text-align: justify;
-}
-
-ul{
-  margin: 0;
-  padding: 0;
-}
-
-.box li{
+#top a {
   display: inline-block;
-  margin: 6px;
-  list-style: none;
+  padding: 2px;
+  letter-spacing: 3px;
+  font-size: 1.5em;
 }
 
-.box li a{
+.need .media {
+  /* float: left;
+	clear: left; */
+  max-width: 85%;
+  max-height: 90%;
+  padding: 25px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
 
-  color: white;
+.section {
+  width: 100%;
+  /* display: inline-block; */
+}
+
+.section .need {
+  /* float: left;
+	margin-left: 3%;
+	margin-top: 2%;*/
+  /* width: 30%; */
+  flex: 30%;
+  padding: 10px;
+  margin: 10px;
+  flex-shrink: 10;
+  background-color: #674679;
+  color: #d6bde2;
+  text-align: justify;
+  border-radius: 10px;
+  -webkit-transition: 0.3s;
+  /*prefijos para compatibilidad con navegadores*/
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  overflow-y: auto;
+
+}
+
+.section .need:hover {
+  background-color: #821657;
+  -webkit-transition: 0.3s;
+  /*prefijos para compatibilidad con navegadores*/
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+
+}
+
+.need .separador {
+  border: 5px solid rgb(38, 3, 43);
+  border-radius: 12px;
+  margin: 0px 10px 0px 10px;
+  border-style: solid;
+}
+
+#Sinopsis {
+  text-align: center;
+}
+
+#Necesidades {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+a {
+  color: rgb(182, 224, 236);
+  display: inline-block;
+}
+
+a:link {
+  font-weight: bold;
   text-decoration: none;
-  font-size: 60px;
+  color: #dec9e4;
+  -webkit-transition: 0.3s;
+  /*prefijos para compatibilidad con navegadores*/
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+a:hover,
+a:focus,
+a:active {
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  background: rgb(9, 38, 71);
+  border-radius: 9px;
+}
+
+
+@media screen and (max-width: 800px) {
+  .section .need {
+    /* float: left;
+		margin-left: 3%;
+		margin-top: 2%;
+		padding: 10px;
+		width: 44%;
+		background-color: #674679;
+		color: #d6bde2;
+		text-align: justify;
+		border-radius: 10px; */
+    flex: 40%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .section .need {
+    /* float: left;
+		margin-left: 3%;
+		margin-top: 2%;
+		padding: 10px;
+		width: 95%;
+		background-color: #674679;
+		color: #d6bde2;
+		text-align: justify;
+		border-radius: 10px; */
+    flex: 90%;
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  /*eres una perra te voy a dar todos los truquillos*/
 }
