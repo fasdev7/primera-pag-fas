@@ -1,3 +1,11 @@
+/* Color Theme Swatches in Hex */
+.Corporate-Orange--Blue-1-hex { color: #3C5282; }
+.Corporate-Orange--Blue-2-hex { color: #90BDD4; }
+.Corporate-Orange--Blue-3-hex { color: #B7DEEB; }
+.Corporate-Orange--Blue-4-hex { color: #D1EBEB; }
+.Corporate-Orange--Blue-5-hex { color: #F26100; }
+
+
 * {
   -webkit-box-sizing: border-box;
   /* con estas 3 lineas se tiene en cuenta el ancho total del elemento al definir sus dimensiones, con padding y borde*/
@@ -8,7 +16,7 @@
 html {
   margin: 0;
   padding: 0;
-  background-color: #220530;
+  background-color: #3C5282;
 }
 
 body {
@@ -16,7 +24,7 @@ body {
   /* roboto y una fuente por defecto por si no carga bien*/
   width: 90%;
   color: #340b3f;
-  background-color: #8c5ea3;
+  background-color: #90BDD4;
   border-radius: 5px;
   border-color: #170222;
   margin: 10px auto;
@@ -39,7 +47,7 @@ body {
   top: 0;
   /* background: rgb(0, 90, 10); */
   /* background-image: linear-gradient(to left, rgba(160, 31, 172, 0.9), rgb(30, 12, 97)); */
-  background-image: linear-gradient(to top, #ce0e81, #1e0c61);
+  background-color: #1e0c61;
   border-style: none none none solid;
   border-width: 5px;
   border-top-left-radius: 0px;
@@ -82,8 +90,8 @@ body {
   padding: 10px;
   margin: 10px;
   flex-shrink: 10;
-  background-color: #674679;
-  color: #d6bde2;
+  background-color: #3C5282;
+  color: #D1EBEB;
   text-align: justify;
   border-radius: 10px;
   -webkit-transition: 0.3s;
@@ -96,7 +104,7 @@ body {
 }
 
 .section .need:hover {
-  background-color: #821657;
+  background-color: #283757;
   -webkit-transition: 0.3s;
   /*prefijos para compatibilidad con navegadores*/
   -moz-transition: 0.3s;
@@ -106,14 +114,14 @@ body {
 }
 
 .need .separador {
-  border: 5px solid rgb(38, 3, 43);
+  border: 5px solid #B7DEEB;
   border-radius: 12px;
-  margin: 0px 10px 0px 10px;
+  margin: 0px 5px 0px 5px;
   border-style: solid;
 }
 
 #Necesidades {
-  text-align: center;
+  text-align: justify;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -126,7 +134,7 @@ a {
   /* display: inline-block; */
 }
 
-a:link {
+#top a:link {
   font-weight: bold;
   text-decoration: none;
   color: #dec9e4;
@@ -137,14 +145,14 @@ a:link {
   transition: 0.3s;
 }
 
-a:hover,
-a:focus,
-a:active {
+#top a:hover,
+#top a:focus,
+#top a:active {
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
-  background: rgb(9, 38, 71);
+  background: #4a626e;
   border-radius: 9px;
 }
 
