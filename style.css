@@ -1,10 +1,10 @@
-/* Color Theme Swatches in Hex */
-.Corporate-Orange--Blue-1-hex { color: #3C5282; }
+/*Paleta de color utilizada: */
+/* .Corporate-Orange--Blue-1-hex { color: #3C5282; }
 .Corporate-Orange--Blue-2-hex { color: #90BDD4; }
 .Corporate-Orange--Blue-3-hex { color: #B7DEEB; }
 .Corporate-Orange--Blue-4-hex { color: #D1EBEB; }
 .Corporate-Orange--Blue-5-hex { color: #F26100; }
-
+ */
 
 * {
   -webkit-box-sizing: border-box;
@@ -20,8 +20,7 @@ html {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  /* roboto y una fuente por defecto por si no carga bien*/
+  font-family: 'Roboto', sans-serif;   /* roboto y una fuente por defecto por si no carga bien*/
   width: 90%;
   color: #340b3f;
   background-color: #90BDD4;
@@ -29,24 +28,21 @@ body {
   border-color: #170222;
   margin: 10px auto;
   overflow-y: auto;
-  word-break: break-word;
+  word-break: break-word; /* divide los enlaces en diferentes lineas si lo requiere la maquetación*/
 }
 
+.to_top{
+  visibility: hidden;
+}
 
 #top {
   text-align: center;
   text-transform: uppercase;
-  /* font-size: 25px; */
-  /* font-color:  */
-  color: rgba(255, 255, 255, 0);
-  /* barras invisibles*/
-  /* width: 100%; */
+  color: rgba(255, 255, 255, 0); /*invisibles barras*/
   margin: auto;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
-  /* background: rgb(0, 90, 10); */
-  /* background-image: linear-gradient(to left, rgba(160, 31, 172, 0.9), rgb(30, 12, 97)); */
   background-color: #1e0c61;
   border-style: none none none solid;
   border-width: 5px;
@@ -64,7 +60,7 @@ body {
   font-size: 1.5em;
 }
 
-.need .media {
+.need .media{
   /* float: left;
 	clear: left; */
   max-width: 85%;
@@ -81,7 +77,8 @@ body {
   /* display: inline-block; */
 }
 
-.section .need {
+.section .need,
+#Tecnologias .subsection{
   /* float: left;
 	margin-left: 3%;
 	margin-top: 2%;*/
@@ -103,7 +100,8 @@ body {
 
 }
 
-.section .need:hover {
+.section .need:hover,
+#Tecnologias .subsection:hover {
   background-color: #283757;
   -webkit-transition: 0.3s;
   /*prefijos para compatibilidad con navegadores*/
@@ -120,17 +118,16 @@ body {
   border-style: solid;
 }
 
-#Necesidades {
+#Necesidades, #Tecnologias {
   text-align: justify;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 10px;
 }
 
 a {
-  color: rgb(182, 224, 236);
+  color: rgb(28, 36, 39);
   /* display: inline-block; */
 }
 
@@ -144,30 +141,41 @@ a {
   -o-transition: 0.3s;
   transition: 0.3s;
 }
-
+#top a:visited{  /*para que no cambie su color al ser activado una vez*/
+  font-weight: bold;
+  text-decoration: none;
+  color: #dec9e4;
+  -webkit-transition: 0.3s;
+  /*prefijos para compatibilidad con navegadores*/
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
 #top a:hover,
-#top a:focus,
-#top a:active {
+#top a:focus {
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
   background: #4a626e;
+  color: #dec9e4;
   border-radius: 9px;
 }
 
 
+
+
+
 @media screen and (max-width: 800px) {
   .section .need {
-    /* float: left;
+    float: left;
 		margin-left: 3%;
 		margin-top: 2%;
 		padding: 10px;
 		width: 44%;
-		background-color: #674679;
 		color: #d6bde2;
 		text-align: justify;
-		border-radius: 10px; */
+		border-radius: 10px;
     flex: 40%;
   }
 }
@@ -180,14 +188,13 @@ a {
   }
   
   .section .need {
-    /* float: left;
+    float: left;
 		margin-left: 3%;
 		margin-top: 2%;
 		width: 95%;
-		background-color: #674679;
 		color: #d6bde2;
 		text-align: justify;
-		border-radius: 10px; */
+		border-radius: 10px;
     flex: 90%;
     padding: 10px;
     margin-left: 0%;
@@ -203,7 +210,6 @@ a {
     /* width: 100%; */
     margin: auto;
     top: 0;
-    background-image: linear-gradient(to top, #ce0e81, #1e0c61);
     border-style: none none none solid;
     border-width: 5px;
     border-top-left-radius: 0px;
@@ -219,9 +225,4 @@ a {
     letter-spacing: 1px;
     font-size: 1em;
   }
-}
-
-
-@media screen and (max-width: 800px) {
-  /*eres una perra te voy a dar todos los truquillos*/
 }
