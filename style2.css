@@ -20,25 +20,26 @@ html {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;   /* roboto y una fuente por defecto por si no carga bien*/
-  width: 90%;
+  font-family: 'Open Sans', sans-serif;
   color: #340b3f;
   background-color: #90BDD4;
-  border-radius: 5px;
-  border-color: #170222;
+  /* border-radius: 5px;
+  border-color: #170222; */
   margin: 10px auto;
   overflow-y: auto;
-  word-break: break-word; /* divide los enlaces en diferentes lineas si lo requiere la maquetación*/
+  word-break: break-word;
+  /* divide los enlaces en diferentes lineas si lo requiere la maquetación*/
 }
 
-.to_top{
+.to_top {
   visibility: hidden;
 }
 
 #top {
   text-align: center;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0); /*invisibles barras*/
+  color: rgba(255, 255, 255, 0);
+  /*invisibles barras*/
   margin: auto;
   position: sticky;
   position: -webkit-sticky;
@@ -46,10 +47,11 @@ body {
   background-color: #1e0c61;
   border-style: none none none solid;
   border-width: 5px;
+  /*
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-bottom-right-radius: 15px; */
   padding: 25px;
 }
 
@@ -60,7 +62,7 @@ body {
   font-size: 1.5em;
 }
 
-.need .media{
+.need .media {
   /* float: left;
 	clear: left; */
   max-width: 85%;
@@ -78,19 +80,19 @@ body {
 }
 
 .section .need,
-#Tecnologias .subsection{
+#Tecnologias .subsection {
   /* float: left;
 	margin-left: 3%;
 	margin-top: 2%;*/
   /* width: 30%; */
   flex: 30%;
   padding: 10px;
-  margin: 10px;
+  margin: 2px;
   flex-shrink: 10;
   background-color: #3C5282;
   color: #D1EBEB;
   text-align: justify;
-  border-radius: 10px;
+  /* border-radius: 1px; */
   -webkit-transition: 0.3s;
   /*prefijos para compatibilidad con navegadores*/
   -moz-transition: 0.3s;
@@ -98,6 +100,10 @@ body {
   transition: 0.3s;
   overflow-y: auto;
 
+}
+
+#Tecnologias .subsection a{
+  color: #D1EBEB;
 }
 
 .section .need:hover,
@@ -112,15 +118,13 @@ body {
 }
 
 .need .separador {
-  border: 5px solid #B7DEEB;
-  border-radius: 12px;
-  margin: 0px 5px 0px 5px;
-  border-style: solid;
+  visibility: hidden;
 }
 
-#Necesidades, #Tecnologias {
+#Necesidades,
+#Tecnologias {
   text-align: justify;
-  display: flex;
+  /* display: flex; */
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -129,6 +133,10 @@ body {
 a {
   color: rgb(28, 36, 39);
   /* display: inline-block; */
+}
+
+#Necesidades .section_text, .section_title {
+  display: block;
 }
 
 #top a:link {
@@ -141,7 +149,9 @@ a {
   -o-transition: 0.3s;
   transition: 0.3s;
 }
-#top a:visited{  /*para que no cambie su color al ser activado una vez*/
+
+#top a:visited {
+  /*para que no cambie su color al ser activado una vez*/
   font-weight: bold;
   text-decoration: none;
   color: #dec9e4;
@@ -151,6 +161,7 @@ a {
   -o-transition: 0.3s;
   transition: 0.3s;
 }
+
 #top a:hover,
 #top a:focus {
   -webkit-transition: 0.3s;
@@ -169,38 +180,39 @@ a {
 @media screen and (max-width: 800px) {
   .section .need {
     float: left;
-		margin-left: 3%;
-		margin-top: 2%;
-		padding: 10px;
-		width: 44%;
-		color: #d6bde2;
-		text-align: justify;
-		border-radius: 10px;
+    margin-left: 3%;
+    margin-top: 2%;
+    padding: 10px;
+    width: 44%;
+    color: #d6bde2;
+    text-align: justify;
+    border-radius: 10px;
     flex: 40%;
   }
 }
 
 @media screen and (max-width: 600px) {
 
-  body{
+  body {
     margin: auto;
     width: 98%;
   }
-  
+
   .section .need,
   #Tecnologias .subsection {
     float: left;
-		margin-left: 3%;
-		margin-top: 2%;
-		width: 95%;
-		color: #d6bde2;
-		text-align: justify;
-		border-radius: 10px;
+    margin-left: 3%;
+    margin-top: 2%;
+    width: 95%;
+    color: #d6bde2;
+    text-align: justify;
+    border-radius: 10px;
     flex: 90%;
     padding: 10px;
     margin-left: 0%;
-    margin-right: 0%;    
+    margin-right: 0%;
   }
+
   #top {
     text-align: center;
     text-transform: uppercase;
