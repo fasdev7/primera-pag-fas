@@ -1,10 +1,9 @@
-/*Paleta de color utilizada: */
-/* .Corporate-Orange--Blue-1-hex { color: #3C5282; }
-.Corporate-Orange--Blue-2-hex { color: #90BDD4; }
-.Corporate-Orange--Blue-3-hex { color: #B7DEEB; }
-.Corporate-Orange--Blue-4-hex { color: #D1EBEB; }
-.Corporate-Orange--Blue-5-hex { color: #F26100; }
- */
+/* CSS HEX */
+/*--light-gray: #ceccccff;
+--antique-fuchsia: #9d6381ff;
+--lavender-blush: #fdecefff;
+--rich-black-fogra-39: #0f110cff;
+--old-mauve: #612940ff; */
 
 * {
   -webkit-box-sizing: border-box;
@@ -16,13 +15,13 @@
 html {
   margin: 0;
   padding: 0;
-  background-color: #1e0c61;
+  background-color: #612940;
 }
 
 body {
   font-family: 'Open Sans', sans-serif;
-  color: #340b3f;
-  background-color: #90BDD4;
+  color: #0f110c;
+  background-color: #e2e2e2;
   /* border-radius: 5px;
   border-color: #170222; */
   margin: 10px auto;
@@ -44,7 +43,7 @@ body {
   position: sticky;
   position: -webkit-sticky;
   top: 0;
-  background-color: #1e0c61;
+  background-color: #612940;
   border-style: none none none solid;
   border-width: 5px;
   /*
@@ -83,19 +82,9 @@ body {
 
 
 #Tecnologias .subsection a{
-  color: #D1EBEB;
+  color: #e2d1eb;
 }
 
-.section .need:hover,
-#Tecnologias .subsection:hover {
-  background-color: #283757;
-  -webkit-transition: 0.3s;
-  /*prefijos para compatibilidad con navegadores*/
-  -moz-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-
-}
 
 .need .separador {
   visibility: hidden;
@@ -164,9 +153,12 @@ a {
   padding: 25px;
   margin: 5px;
   flex-shrink: 10;
-  background-color: #3C5282;
-  color: #D1EBEB;
+  background-color: #9D6381;
+  color: #0f110c;
   text-align: justify;
+  border-color: #612940;
+  border-width: 3px;
+  border-style: solid;
   /* border-radius: 1px; */
   -webkit-transition: 0.3s;
   /*prefijos para compatibilidad con navegadores*/
@@ -176,6 +168,18 @@ a {
   overflow-y: auto;
 
 }
+/* 
+.section .need:hover,
+#Tecnologias .subsection:hover {
+  background-color: #9D6381;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+
+} */
+
+
 
 @media screen and (max-width: 800px) {
   #top {
