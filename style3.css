@@ -1,13 +1,5 @@
-/* CSS HEX */
-/*--light-gray: #ceccccff;
---antique-fuchsia: #9d6381ff;
---lavender-blush: #fdecefff;
---rich-black-fogra-39: #0f110cff;
---old-mauve: #612940ff; */
-
 * {
   -webkit-box-sizing: border-box;
-  /* con estas 3 lineas se tiene en cuenta el ancho total del elemento al definir sus dimensiones, con padding y borde*/
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -21,14 +13,9 @@ html {
 body {
   font-family: 'Open Sans', sans-serif;
   color: #0f110c;
-  /* background-color: #F48B01; */
   background-image: linear-gradient(to bottom, #ff9100, #dd7d00);
-  /* border-radius: 5px;
-  border-color: #170222; */
-  /* margin: 10px auto; */
   overflow-y: auto;
   word-break: break-word;
-  /* divide los enlaces en diferentes lineas si lo requiere la maquetación*/
 }
 
 .to_top {
@@ -39,7 +26,6 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0);
-  /*invisibles barras*/
   margin: auto;
   position: sticky;
   position: -webkit-sticky;
@@ -48,11 +34,6 @@ body {
   border-style: none none solid none;
   border-width: 5px;
   border-color: #c77100;
-  /*
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px; */
   padding: 25px;
 }
 
@@ -70,14 +51,12 @@ body {
   text-decoration: none;
   color: #6621c0;
   -webkit-transition: 0.3s;
-  /*prefijos para compatibilidad con navegadores*/
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
 }
 
 #top a:visited {
-  /*para que no cambie su color al ser activado una vez*/
   font-weight: bold;
   text-decoration: none;
   color: #6c25c9;
@@ -102,10 +81,6 @@ body {
 
 
 .need .media {
-  /* float: left;
-	clear: left; */
-  /* max-width: 85%;
-  max-height: 90%; */
   max-width: 70%;
   max-height: 40em;
   padding: 25px;
@@ -117,7 +92,6 @@ body {
 .section {
   width: 100%;
   padding: 25px;
-  /* display: inline-block; */
 }
 
 
@@ -139,22 +113,12 @@ body {
 
 a {
   color: rgb(28, 36, 39);
-  /* display: inline-block; */
 }
-
-/* 
-#Necesidades .section_text, .section_title {
-  display: block;
-} */
 
 
 
 .section .need,
 #Tecnologias .subsection {
-  /* float: left;
-	margin-left: 3%;
-	margin-top: 2%;*/
-  /* width: 30%; */
   flex: 30%;
   padding: 25px;
   margin: 5px;
@@ -166,8 +130,6 @@ a {
   border-width: 3px;
   border-style: solid;
   border-radius: 10px;
-  /* -webkit-transition: 0.3s; */
-  /*prefijos para compatibilidad con navegadores*/
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -191,11 +153,7 @@ a {
   #top {
     text-align: center;
     text-transform: uppercase;
-    /* font-size: 25px; */
-    /* font-color:  */
     color: rgba(255, 255, 255, 0);
-    /* barras invisibles*/
-    /* width: 100%; */
     top: 0;
     border-style: none none none solid;
     border-width: 5px;
@@ -203,7 +161,6 @@ a {
   }
 
   #top a {
-    /* display: inline-block; */
     padding: 2px;
     letter-spacing: 1px;
     font-size: 1em;
@@ -220,25 +177,19 @@ a {
   .section {
     width: 100%;
     padding: 5px;
-    /* display: inline-block; */
   }
 
 
   #top {
     text-align: center;
     text-transform: uppercase;
-    /* font-size: 25px; */
-    /* font-color:  */
     color: rgba(255, 255, 255, 0);
-    /* barras invisibles*/
-    /* width: 100%; */
     top: 0;
     border-style: none none none solid;
     padding: 10px;
   }
 
   #top a {
-    /* display: inline-block; */
     padding: 2px;
     letter-spacing: 1px;
     font-size: 1em;

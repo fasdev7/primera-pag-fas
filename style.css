@@ -1,10 +1,3 @@
-/*Paleta de color utilizada: */
-/* .Corporate-Orange--Blue-1-hex { color: #3C5282; }
-.Corporate-Orange--Blue-2-hex { color: #90BDD4; }
-.Corporate-Orange--Blue-3-hex { color: #B7DEEB; }
-.Corporate-Orange--Blue-4-hex { color: #D1EBEB; }
-.Corporate-Orange--Blue-5-hex { color: #F26100; }
- */
 
 * {
   -webkit-box-sizing: border-box;
@@ -38,7 +31,7 @@ body {
 #top {
   text-align: center;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0); /*invisibles barras*/
+  color: rgba(255, 255, 255, 0);
   margin: auto;
   position: sticky;
   position: -webkit-sticky;
@@ -61,8 +54,6 @@ body {
 }
 
 .need .media{
-  /* float: left;
-	clear: left; */
   max-width: 85%;
   max-height: 90%;
   padding: 25px;
@@ -74,15 +65,10 @@ body {
 .section {
   width: 100%;
   padding: 25px;
-  /* display: inline-block; */
 }
 
 .section .need,
 #Tecnologias .subsection{
-  /* float: left;
-	margin-left: 3%;
-	margin-top: 2%;*/
-  /* width: 30%; */
   flex: 30%;
   padding: 10px;
   margin: 10px;
@@ -104,7 +90,6 @@ body {
 #Tecnologias .subsection:hover {
   background-color: #283757;
   -webkit-transition: 0.3s;
-  /*prefijos para compatibilidad con navegadores*/
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -128,7 +113,6 @@ body {
 
 a {
   color: rgb(28, 36, 39);
-  /* display: inline-block; */
 }
 
 #top a:link {
@@ -136,7 +120,6 @@ a {
   text-decoration: none;
   color: #dec9e4;
   -webkit-transition: 0.3s;
-  /*prefijos para compatibilidad con navegadores*/
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -146,7 +129,6 @@ a {
   text-decoration: none;
   color: #dec9e4;
   -webkit-transition: 0.3s;
-  /*prefijos para compatibilidad con navegadores*/
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -204,11 +186,7 @@ a {
   #top {
     text-align: center;
     text-transform: uppercase;
-    /* font-size: 25px; */
-    /* font-color:  */
     color: rgba(255, 255, 255, 0);
-    /* barras invisibles*/
-    /* width: 100%; */
     margin: auto;
     top: 0;
     border-style: none none none solid;
@@ -221,7 +199,6 @@ a {
   }
 
   #top a {
-    /* display: inline-block; */
     padding: 2px;
     letter-spacing: 1px;
     font-size: 1em;
